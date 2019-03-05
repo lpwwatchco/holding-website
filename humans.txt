@@ -3,11 +3,12 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    <Dave Sergeant> -- <Founder>
 
 # THANKS
 
-    <name>
+    <Mike Parkin>
+    <Tom Stimpson>
 
 # TECHNOLOGY COLOPHON
 
