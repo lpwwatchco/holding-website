@@ -6,3 +6,10 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 RewriteCond %{HTTP_HOST} !^www\. [NC]
 RewriteCond %{HTTP_HOST} !^staging\. [NC]
 RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+<If "req('Host') = 'staging.lpwwatchco.com'">
+    Authtype Basic
+    AuthName "user and password"
+    AuthUserFile /home/lpwwatchco/htpassword/staging
+    Require valid-user
+</If>
